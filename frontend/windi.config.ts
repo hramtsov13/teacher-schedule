@@ -11,11 +11,19 @@ export default defineConfig({
         xl: '1280px'
       },
       colors: {
-        green: '#408639'
+        primary: '#409EFF',
+        'primary-dark': '#218EFF',
+        success: '#67C23A',
+        warning: '#E6A23C',
+        danger: '#F56C6C',
+        grey: '#909399',
+        'grey-light': '#F2F6FC',
+        'grey-middle': '#EBEEF5',
+        black: '#303133',
+        orange: '#fb923c'
       },
       fontFamily: {
-        sans: ['Graphik', 'sans-serif'],
-        serif: ['Merriweather', 'serif']
+        sans: ['Helvetica Neue', 'sans-serif']
       }
     }
   }
