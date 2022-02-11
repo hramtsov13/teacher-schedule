@@ -1,55 +1,34 @@
 <template>
-  <div>
-    <el-menu
-      default-active="0"
-      :collapse="isCollapsed"
-      class="bg-grey-middle h-full"
-      :collapse-transition="false"
+  <aside class="bg-primary aside-shadow min-w-1/5 max-w-[300px] h-full py-5">
+    <p
+      class="border-grey-light pb-5 font-sans text-2xl font-medium text-center text-white border-b"
     >
-      <el-menu-item
-        v-for="(student, index) in students"
+      Ученики:
+    </p>
+    <div class="h-screen pb-40 overflow-y-scroll">
+      <AsideItem
+        v-for="student in students"
         :key="student.id"
-        :index="'' + index"
-        class="min-w-[250px] text-right text-black"
-      >
-        <template #title>
-          <el-icon><avatar /></el-icon> {{ student.name }}
-        </template>
-      </el-menu-item>
-    </el-menu>
-  </div>
+        :student="student"
+        route-link="StudentView"
+        :active-routes="['StudentView']"
+      />
+    </div>
+  </aside>
 </template>
 
 <script setup lang="ts">
-import { reactive, ref, withDefaults } from 'vue'
-const students = reactive([
-  {
-    id: Math.random(),
-    name: 'Максим',
-    lastName: 'Петров'
-  },
-  {
-    id: Math.random(),
-    name: 'Иван',
-    lastName: 'Попов'
-  },
-  {
-    id: Math.random(),
-    name: 'Дмитрий',
-    lastName: 'Лодырев'
-  },
-  {
-    id: Math.random(),
-    name: 'Алексей',
-    lastName: 'Прогульщиков'
-  }
-])
+import { IStudent } from '@/helpers/studentsMocks'
+import AsideItem from '../MainLayout/AsideItem.vue'
+import { withDefaults } from 'vue'
 
 interface AsideProps {
-  isCollapsed: boolean
+  isCollapsed?: boolean
+  students: IStudent[]
 }
 
 const props = withDefaults(defineProps<AsideProps>(), {
-  isCollapsed: false
+  isCollapsed: false,
+  students: () => []
 })
 </script>
