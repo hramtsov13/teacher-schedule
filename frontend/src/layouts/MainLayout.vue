@@ -20,6 +20,7 @@ import { useUsersStore } from '../stores/useUsers'
 
 const store = useUsersStore()
 store.getAllUsers()
+
 const students = computed(() => store.$state.students)
 
 const isMenuCollapsed = ref(false)
