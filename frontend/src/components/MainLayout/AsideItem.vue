@@ -1,11 +1,31 @@
 <template>
   <div
-    class="hover:bg-primary-light flex items-center px-5 py-2 cursor-pointer"
-    :class="{ 'bg-primary-light': isActiveRoute }"
-    @click="$router.replace({ path: `/student/${student.id}` })"
+    :class="[
+      'hover:bg-primary-light flex items-center py-2 cursor-pointer w-full',
+      {
+        'hover:bg-primary-light px-5 cursor-pointer': !isCollapsed
+      },
+      { 'bg-primary-light': isActiveRoute },
+      { 'py-4 justify-center': isCollapsed }
+    ]"
+    @click="$router.push({ path: `/student/${student.id}` })"
   >
-    <el-icon class="mr-2.5" color="white"><avatar /></el-icon>
-    <div>
+    <el-tooltip
+      v-if="isCollapsed"
+      effect="dark"
+      :content="`${student.personalInfo.name} ${student.personalInfo.lastName}`"
+      placement="right"
+      :show-after="0"
+      :hide-after="0"
+      transition="''"
+      class="bg-primary"
+    >
+      <el-icon :class="{ 'mr-2.5': !isCollapsed }" color="white" size="30px"><avatar /></el-icon>
+    </el-tooltip>
+
+    <el-icon v-else class="mr-2.5" color="white" size="20px"><avatar /></el-icon>
+
+    <div v-if="!isCollapsed">
       <p class="text-base text-white">
         {{ `${student.personalInfo.name} ${student.personalInfo.lastName}` }}
       </p>

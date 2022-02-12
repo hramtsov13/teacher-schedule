@@ -1,10 +1,15 @@
 <template>
-  <aside class="bg-primary aside-shadow min-w-1/5 max-w-[300px] h-full py-5">
+  <aside
+    class="bg-primary aside-shadow max-w-[300px] w-full h-full py-5 transition-max-width duration-300 fade-out"
+    :class="{ 'max-w-[70px] pt-0': isCollapsed }"
+  >
     <p
-      class="border-grey-light pb-5 font-sans text-2xl font-medium text-center text-white border-b"
+      v-if="!isCollapsed"
+      class="border-grey-light px-5 pb-5 font-sans text-2xl font-medium text-center text-white border-b"
     >
       Ученики:
     </p>
+
     <div class="h-screen pb-40 overflow-y-scroll">
       <AsideItem
         v-for="student in students"
@@ -12,6 +17,7 @@
         :student="student"
         route-link="StudentView"
         :active-routes="['StudentView']"
+        :is-collapsed="isCollapsed"
       />
     </div>
   </aside>

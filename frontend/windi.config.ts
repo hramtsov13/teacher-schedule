@@ -25,20 +25,18 @@ export default defineConfig({
         orange: '#fb923c'
       },
       fontFamily: {
-        sans: ['Helvetica Neue', 'sans-serif']
+        sans: ['Graphik', 'sans-serif'],
+        serif: ['Merriweather', 'serif']
+      },
+      transitionProperty: {
+        width: 'width'
       }
     }
   },
-  shortcuts: {
-    'aside-shadow': 'box-shadow: 13px 0px 35px 0px rgba(34, 60, 80, 0.2)'
-  },
+
   plugins: [
     plugin(function ({ addUtilities }) {
-      const newUtilities = {
-        '.aside-shadow': {
-          'box-shadow': '13px 0px 35px 0px rgba(34, 60, 80, 0.2)'
-        }
-      }
+      const newUtilities = {}
       addUtilities(newUtilities)
     })
   ]
