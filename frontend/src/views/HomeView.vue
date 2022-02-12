@@ -1,9 +1,9 @@
 <template>
-  <div class="gap-x-4 gap-y-4 flex justify-between">
+  <div class="gap-x-4 gap-y-4 grid grid-cols-4">
     <el-card
       v-for="student in students"
       :key="student.id"
-      class="flex-1 cursor-pointer"
+      class="col-span-1 cursor-pointer"
       @click="
         $router.push({
           name: 'StudentView',
@@ -16,7 +16,9 @@
           <span>{{ `${student.personalInfo.name} ${student.personalInfo.lastName}` }}</span>
         </div>
       </template>
-      <p class="text-sm">Ближайшее занятие: {{ student.lessons[0].date }}</p>
+      <p v-if="student.lessons.length" class="text-sm">
+        Ближайшее занятие: {{ student.lessons[0].date }}
+      </p>
     </el-card>
   </div>
 </template>

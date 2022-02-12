@@ -1,6 +1,6 @@
 <template>
   <aside
-    class="bg-primary aside-shadow max-w-[300px] w-full h-full py-5 transition-max-width duration-300 fade-out"
+    class="bg-primary max-w-[300px] w-full h-full py-5 transition-max-width duration-300 fade-out"
     :class="{ 'max-w-[70px] pt-0': isCollapsed }"
   >
     <p

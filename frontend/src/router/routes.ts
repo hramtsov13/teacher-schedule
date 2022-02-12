@@ -5,6 +5,7 @@ const MainLayout = (): RouteComponent => import('../layouts/MainLayout.vue')
 
 const HomeView = (): RouteComponent => import('../views/HomeView.vue')
 const StudentView = (): RouteComponent => import('../views/StudentView.vue')
+const NewStudentView = (): RouteComponent => import('../views/NewStudentView.vue')
 
 const routes: Array<RouteRecordRaw> = [
   {
@@ -24,6 +25,11 @@ const routes: Array<RouteRecordRaw> = [
         path: '/student/:id',
         name: 'StudentView',
         component: StudentView
+      },
+      {
+        path: '/new-student',
+        name: 'NewStudentView',
+        component: NewStudentView
       }
     ]
   }

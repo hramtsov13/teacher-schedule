@@ -11,9 +11,11 @@
 
     <router-link to="/" class="text-xl font-medium text-white">Teacher's schedule</router-link>
 
-    <el-button type="primary">
-      Добавить ученика<el-icon class="ml-2"><Plus /></el-icon>
-    </el-button>
+    <router-link to="/new-student">
+      <el-button type="primary">
+        Добавить ученика<el-icon class="ml-2"><Plus /></el-icon>
+      </el-button>
+    </router-link>
   </el-header>
 </template>
 
@@ -22,7 +24,7 @@ import { ref } from 'vue'
 
 const emit = defineEmits(['isCollapse'])
 
-const isCollapse = ref(true)
+const isCollapse = ref(false)
 
 const handleOpenSideBar = () => {
   isCollapse.value = !isCollapse.value

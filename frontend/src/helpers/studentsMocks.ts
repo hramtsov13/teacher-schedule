@@ -2,8 +2,18 @@ import { reactive } from 'vue'
 
 export type IStudent = {
   id: number
-  personalInfo: { name: string; lastName: string }
+  personalInfo: IStudentPersonalInfo
   lessons?: ILesson[] | null
+}
+
+export interface IStudentPersonalInfo {
+  name: string
+  lastName: string
+  phone?: string
+  city?: string
+  email?: string
+  languageLevel?: string
+  comment?: string | undefined
 }
 
 export interface ILesson {
@@ -14,22 +24,51 @@ export interface ILesson {
 export const students = reactive<IStudent[]>([
   {
     id: 1,
-    personalInfo: { name: 'Максим', lastName: 'Петров' },
+    personalInfo: {
+      name: 'Максим',
+      lastName: 'Петров',
+      phone: '79998887755',
+      city: 'Санкт-Петербург',
+      email: 'maxim@mail.ru',
+      languageLevel: 'Intermediate',
+      comment: 'Лодырь!'
+    },
     lessons: [{ date: new Date().toLocaleDateString(), teacher: 'Анна Сладких' }]
   },
   {
     id: 2,
-    personalInfo: { name: 'Иван', lastName: 'Попов' },
+    personalInfo: {
+      name: 'Иван',
+      lastName: 'Попов',
+      phone: '79998887755',
+      city: 'Санкт-Петербург',
+      email: 'maxim@mail.ru',
+      languageLevel: 'Intermediate'
+    },
     lessons: [{ date: new Date().toLocaleDateString(), teacher: 'Анна Сладких' }]
   },
   {
     id: 3,
-    personalInfo: { name: 'Дмитрий', lastName: 'Лодырев' },
+    personalInfo: {
+      name: 'Дмитрий',
+      lastName: 'Лодырев',
+      phone: '79998887755',
+      city: 'Санкт-Петербург',
+      email: 'maxim@mail.ru',
+      languageLevel: 'Intermediate'
+    },
     lessons: [{ date: new Date().toLocaleDateString(), teacher: 'Анна Сладких' }]
   },
   {
     id: 4,
-    personalInfo: { name: 'Алексей', lastName: 'Прогульщиков' },
+    personalInfo: {
+      name: 'Алексей',
+      lastName: 'Прогульщиков',
+      phone: '79998887755',
+      city: 'Санкт-Петербург',
+      email: 'maxim@mail.ru',
+      languageLevel: 'Intermediate'
+    },
     lessons: [{ date: new Date().toLocaleDateString(), teacher: 'Анна Сладких' }]
   }
 ])

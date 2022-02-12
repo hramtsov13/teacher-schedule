@@ -2,6 +2,11 @@
   <div>
     {{ `${studentToShow.personalInfo.name} ${studentToShow.personalInfo.lastName}` }}
     <p v-if="studentToShow.lessons.length">Учитель: {{ studentToShow.lessons[0].teacher }}</p>
+    <p v-if="studentToShow.personalInfo.comment">
+      Комментарий: {{ studentToShow.personalInfo.comment }}
+    </p>
+    <p>Телефон: {{ studentToShow.personalInfo.phone }}</p>
+    <p>E-mail: {{ studentToShow.personalInfo.email }}</p>
   </div>
 </template>
 

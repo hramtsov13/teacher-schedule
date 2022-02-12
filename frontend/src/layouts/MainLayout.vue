@@ -3,7 +3,7 @@
     <Header @is-collapse="handleAsideCollapsing" />
     <el-container>
       <Aside :is-collapsed="isMenuCollapsed" :students="students" />
-      <el-main class="bg-grey-light">
+      <el-main class="bg-grey-light h-screen pb-10 overflow-y-scroll">
         <router-view v-slot="{ Component }" :key="$route.path">
           <component :is="Component" />
         </router-view>

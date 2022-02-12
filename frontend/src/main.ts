@@ -2,15 +2,15 @@ import App from './App.vue'
 import ElementPlus from 'element-plus'
 import { createApp } from 'vue'
 import router from './router'
+import { createPinia } from 'pinia'
 
 import 'element-plus/dist/index.css'
 import 'virtual:windi.css'
 
-import { createPinia } from 'pinia'
+import './plugins/veeValidate'
+import * as ElIconModules from '@element-plus/icons-vue'
 
 const pinia = createPinia()
-
-import * as ElIconModules from '@element-plus/icons-vue'
 
 const app = createApp(App)
 //  Unified registration Icon Icon
