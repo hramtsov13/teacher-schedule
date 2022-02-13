@@ -7,6 +7,7 @@
     </p>
     <p>Телефон: {{ studentToShow.personalInfo.phone }}</p>
     <p>E-mail: {{ studentToShow.personalInfo.email }}</p>
+    <p>Уровень языка: {{ studentToShow.personalInfo.languageLevel }}</p>
   </div>
 </template>
 

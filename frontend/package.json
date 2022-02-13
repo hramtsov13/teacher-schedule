@@ -14,10 +14,12 @@
     "pinia": "^2.0.11",
     "vee-validate": "^4.5.8",
     "vue": "^3.2.25",
+    "vue-i18n": "^9.1.9",
     "vue-router": "4"
   },
   "devDependencies": {
     "@babel/core": "^7.17.0",
+    "@intlify/vite-plugin-vue-i18n": "^3.3.0",
     "@typescript-eslint/eslint-plugin": "^5.10.2",
     "@typescript-eslint/eslint-plugin-tslint": "^5.10.2",
     "@typescript-eslint/parser": "^5.10.2",
