@@ -20,6 +20,7 @@ import { useUsersStore } from '../stores/useUsers'
 
 const store = useUsersStore()
 store.getAllUsers()
+store.getData()
 
 const students = computed(() => store.$state.students)
 
