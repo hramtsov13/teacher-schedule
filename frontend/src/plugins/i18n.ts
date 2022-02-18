@@ -4,5 +4,6 @@ import { DEFAULT_LOCALE } from '@/constants'
 
 export const i18n = createI18n({
   locale: DEFAULT_LOCALE,
+  globalInjection: true,
   messages
 })
