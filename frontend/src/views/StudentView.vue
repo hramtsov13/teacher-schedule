@@ -1,13 +1,17 @@
 <template>
   <div>
     {{ `${studentToShow.personalInfo.name} ${studentToShow.personalInfo.lastName}` }}
-    <p v-if="studentToShow.lessons.length">Учитель: {{ studentToShow.lessons[0].teacher }}</p>
-    <p v-if="studentToShow.personalInfo.comment">
-      Комментарий: {{ studentToShow.personalInfo.comment }}
+    <p v-if="studentToShow.lessons.length">
+      {{ $t('STUDENT_VIEW_INFO_TEACHER') }}: {{ studentToShow.lessons[0].teacher }}
     </p>
-    <p>Телефон: {{ studentToShow.personalInfo.phone }}</p>
-    <p>E-mail: {{ studentToShow.personalInfo.email }}</p>
-    <p>Уровень языка: {{ studentToShow.personalInfo.languageLevel }}</p>
+    <p v-if="studentToShow.personalInfo.comment">
+      {{ $t('STUDENT_VIEW_INFO_COMMENT') }}: {{ studentToShow.personalInfo.comment }}
+    </p>
+    <p>{{ $t('STUDENT_VIEW_INFO_PHONE') }}: {{ studentToShow.personalInfo.phone }}</p>
+    <p>{{ $t('STUDENT_VIEW_INFO_EMAIL') }}: {{ studentToShow.personalInfo.email }}</p>
+    <p>
+      {{ $t('STUDENT_VIEW_INFO_LANGUAGE_LEVEL') }}: {{ studentToShow.personalInfo.languageLevel }}
+    </p>
   </div>
 </template>
 

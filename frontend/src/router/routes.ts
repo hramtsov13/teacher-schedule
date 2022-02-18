@@ -1,5 +1,4 @@
-import { RouteRecordRaw } from 'vue-router'
-import { RouteComponent } from 'vue-router'
+import { RouteRecordRaw, RouteComponent } from 'vue-router'
 
 const MainLayout = (): RouteComponent => import('../layouts/MainLayout.vue')
 

@@ -30,7 +30,7 @@
         {{ `${student.personalInfo.name} ${student.personalInfo.lastName}` }}
       </p>
       <p v-if="student.lessons.length" class="text-grey-middle text-xs">
-        Следующий урок: {{ student.lessons[0].date }}
+        {{ $t('ASIDE_NEXT_LESSON') }}: {{ student.lessons[0].date }}
       </p>
     </div>
   </div>
