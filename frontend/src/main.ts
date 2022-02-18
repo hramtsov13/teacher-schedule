@@ -3,6 +3,7 @@ import ElementPlus from 'element-plus'
 import { createApp } from 'vue'
 import router from './router'
 import { createPinia } from 'pinia'
+import { i18n } from './plugins/i18n'
 
 import 'element-plus/dist/index.css'
 import 'virtual:windi.css'
@@ -21,4 +22,4 @@ for (const iconName in ElIconModules) {
   }
 }
 
-app.use(router).use(pinia).use(ElementPlus).mount('#app')
+app.use(router).use(pinia).use(ElementPlus).use(i18n).mount('#app')
