@@ -26,8 +26,17 @@ export default defineConfig({
         orange: '#fb923c'
       },
       fontFamily: {
-        sans: ['Graphik', 'sans-serif'],
-        serif: ['Merriweather', 'serif']
+        sans: ['Barlow', 'sans-serif'],
+        serif: ['Rubik', 'sans-serif']
+      },
+      fontSize: {
+        21: '21px',
+        middle: '22px',
+        24: '24px',
+        30: '2rem',
+        package: '32px',
+        h1: '36px',
+        student_name: '2rem'
       },
       transitionProperty: {
         width: 'width'
