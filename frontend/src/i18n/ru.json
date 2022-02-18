@@ -1,3 +1,8 @@
 {
-  "AUTHORIZATION_VIEW_PATIENT_CARD_TITLE": "Rechercher votre praticien"
+  "STUDENT_VIEW_INFO_TEACHER": "Учитель",
+  "STUDENT_VIEW_INFO_COMMENT": "Комментарий",
+  "STUDENT_VIEW_INFO_PHONE": "Телефон",
+  "STUDENT_VIEW_INFO_EMAIL": "Email",
+  "STUDENT_VIEW_INFO_LANGUAGE_LEVEL": "Уровень языка",
+  "ASIDE_NEXT_LESSON": "Следующий урок"
 }
