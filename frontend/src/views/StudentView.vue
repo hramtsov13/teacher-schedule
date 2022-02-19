@@ -6,8 +6,8 @@
           {{ `${studentToShow.personalInfo.name} ${studentToShow.personalInfo.lastName}` }}
         </p>
       </div>
-      <div class="gap-x-4 flex h-full mb-4">
-        <el-card class="flex-1 rounded-lg">
+      <div class="gap-4 grid h-full grid-cols-[2fr,3fr] grid-rows-2 mb-4">
+        <el-card class="row-span-full rounded-lg">
           <template #header>
             <div class="flex items-center justify-between">
               <p>{{ $t('STUDENT_VIEW_INFO_INFORMATION') }}</p>
@@ -51,8 +51,8 @@
             </p>
           </div>
         </el-card>
-        <div class="gap-y-2 flex-[2] w-full">
-          <el-card class="mb-4 rounded-lg">
+        <div class="gap-y-4 row-span-full grid w-full grid-rows-2">
+          <el-card class="rounded-lg">
             <p>
               {{ $t('STUDENT_VIEW_INFO_COMMENT') }}:
               <span class="text-primary font-normal">{{
@@ -79,9 +79,7 @@
             </p>
           </el-card>
         </div>
-      </div>
-      <div>
-        <el-card class="mb-4 rounded-lg">
+        <el-card class="col-span-2 mb-4 rounded-lg">
           <template #header> {{ $t('STUDENT_VIEW_INFO_CALENDAR') }} </template>
           <div class="flex items-center justify-center">Тут календарь</div>
         </el-card>
