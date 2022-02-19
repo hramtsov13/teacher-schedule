@@ -12,8 +12,8 @@ export default defineConfig({
         xl: '1280px'
       },
       colors: {
-        primary: '#409EFF',
-        'primary-dark': '#218EFF',
+        primary: '#4f83cc',
+        'primary-dark': '#01579b',
         'primary-light': '#60a5fa',
         success: '#67C23A',
         warning: '#E6A23C',

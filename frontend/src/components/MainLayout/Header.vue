@@ -1,5 +1,5 @@
 <template>
-  <el-header class="flex justify-between items-center py-2.5 px-10 bg-orange font-sans">
+  <el-header class="flex justify-between items-center py-2.5 px-10 bg-primary-dark font-sans">
     <div>
       <el-button v-if="isCollapse" type="primary" @click="handleOpenSideBar">
         <el-icon class="cursor-pointer"><expand /></el-icon>

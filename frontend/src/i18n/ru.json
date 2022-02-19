@@ -4,5 +4,9 @@
   "STUDENT_VIEW_INFO_PHONE": "Телефон",
   "STUDENT_VIEW_INFO_EMAIL": "Email",
   "STUDENT_VIEW_INFO_LANGUAGE_LEVEL": "Уровень языка",
-  "ASIDE_NEXT_LESSON": "Следующий урок"
+  "STUDENT_VIEW_INFO_INFORMATION": "Информация",
+  "STUDENT_VIEW_INFO_CALENDAR": "Календарь",
+  "STUDENT_VIEW_INFO_PRICE": "₽ / час",
+  "ASIDE_NEXT_LESSON": "Следующий урок",
+  "NO_DATA": "Нет данных"
 }
