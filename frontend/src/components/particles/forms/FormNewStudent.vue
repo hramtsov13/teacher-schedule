@@ -89,7 +89,7 @@
 </template>
 
 <script setup lang="ts">
-import { reactive, ref } from 'vue'
+import { reactive } from 'vue'
 import { useField, useForm, useIsFormValid, useIsSubmitting } from 'vee-validate'
 import { MIN_PHONE_LENGTH } from '@/constants'
 import { sleep } from '@/helpers/utils'
@@ -136,7 +136,6 @@ const form = reactive({
 const onSubmit = handleSubmit(async (values) => {
   await sleep(1000)
   emit('submitForm', {
-    id: 5,
     personalInfo: {
       ...values,
       phone: values.phone.replace(/\s/g, '')
