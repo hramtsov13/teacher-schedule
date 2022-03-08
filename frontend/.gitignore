@@ -8,3 +8,4 @@ _app/dist
 *.log
 .env
 *.log
+.firebase
