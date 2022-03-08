@@ -1,14 +1,14 @@
 <template>
   <div
-    class="border-grey-darker px-5 pt-5 border max-w-[800px] bg-white w-full rounded-md shadow-md"
+    class="border-grey-darker px-5 py-5 border max-w-[800px] bg-white w-full rounded-md shadow-md"
   >
-    <p class="border-grey-darker pb-2 border-b">Добавить нового ученика:</p>
+    <p class="border-grey-darker pb-2 mb-4 border-b">Добавить нового ученика:</p>
     <el-form
       ref="formRef"
       :model="form"
       label-width="100%"
       label-position="top"
-      class="gap-y-2 gap-x-4 grid grid-cols-2 py-4"
+      class="gap-y-2 gap-x-4 grid grid-cols-2"
       @submit="onSubmit"
     >
       <el-form-item
@@ -89,7 +89,7 @@
 </template>
 
 <script setup lang="ts">
-import { reactive, ref } from 'vue'
+import { reactive } from 'vue'
 import { useField, useForm, useIsFormValid, useIsSubmitting } from 'vee-validate'
 import { MIN_PHONE_LENGTH } from '@/constants'
 import { sleep } from '@/helpers/utils'
@@ -136,7 +136,6 @@ const form = reactive({
 const onSubmit = handleSubmit(async (values) => {
   await sleep(1000)
   emit('submitForm', {
-    id: 5,
     personalInfo: {
       ...values,
       phone: values.phone.replace(/\s/g, '')

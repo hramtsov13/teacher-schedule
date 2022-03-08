@@ -1,7 +1,7 @@
 <template>
   <div
     :class="[
-      'hover:bg-primary-light flex items-center py-2 cursor-pointer w-full',
+      'hover:bg-primary-light flex items-center py-2 cursor-pointer w-full relative',
       {
         'hover:bg-primary-light px-5 cursor-pointer': !isCollapsed
       },
@@ -10,6 +10,7 @@
     ]"
     @click="$router.push({ path: `/student/${student.id}` })"
   >
+    <div v-if="isActiveRoute" class="absolute w-[0.4rem] h-full bg-primary-dark right-0"></div>
     <el-tooltip
       v-if="isCollapsed"
       effect="dark"

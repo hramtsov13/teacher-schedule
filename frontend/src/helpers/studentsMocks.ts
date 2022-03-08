@@ -70,5 +70,152 @@ export const students = reactive<IStudent[]>([
       languageLevel: 'Intermediate'
     },
     lessons: [{ date: new Date().toLocaleDateString(), teacher: 'Анна Сладких' }]
+  },
+  {
+    id: 5,
+    personalInfo: {
+      name: 'Максим',
+      lastName: 'Петров',
+      phone: '79998887755',
+      city: 'Санкт-Петербург',
+      email: 'maxim@mail.ru',
+      languageLevel: 'Intermediate',
+      comment: 'Лодырь!'
+    },
+    lessons: [{ date: new Date().toLocaleDateString(), teacher: 'Анна Сладких' }]
+  },
+  {
+    id: 6,
+    personalInfo: {
+      name: 'Иван',
+      lastName: 'Попов',
+      phone: '79998887755',
+      city: 'Санкт-Петербург',
+      email: 'maxim@mail.ru',
+      languageLevel: 'Intermediate'
+    },
+    lessons: [{ date: new Date().toLocaleDateString(), teacher: 'Анна Сладких' }]
+  },
+  {
+    id: 7,
+    personalInfo: {
+      name: 'Дмитрий',
+      lastName: 'Лодырев',
+      phone: '79998887755',
+      city: 'Санкт-Петербург',
+      email: 'maxim@mail.ru',
+      languageLevel: 'Intermediate'
+    },
+    lessons: [{ date: new Date().toLocaleDateString(), teacher: 'Анна Сладких' }]
+  },
+  {
+    id: 8,
+    personalInfo: {
+      name: 'Алексей',
+      lastName: 'Прогульщиков',
+      phone: '79998887755',
+      city: 'Санкт-Петербург',
+      email: 'maxim@mail.ru',
+      languageLevel: 'Intermediate'
+    },
+    lessons: [{ date: new Date().toLocaleDateString(), teacher: 'Анна Сладких' }]
+  },
+  {
+    id: 9,
+    personalInfo: {
+      name: 'Максим',
+      lastName: 'Петров',
+      phone: '79998887755',
+      city: 'Санкт-Петербург',
+      email: 'maxim@mail.ru',
+      languageLevel: 'Intermediate',
+      comment: 'Лодырь!'
+    },
+    lessons: [{ date: new Date().toLocaleDateString(), teacher: 'Анна Сладких' }]
+  },
+  {
+    id: 10,
+    personalInfo: {
+      name: 'Иван',
+      lastName: 'Попов',
+      phone: '79998887755',
+      city: 'Санкт-Петербург',
+      email: 'maxim@mail.ru',
+      languageLevel: 'Intermediate'
+    },
+    lessons: [{ date: new Date().toLocaleDateString(), teacher: 'Анна Сладких' }]
+  },
+  {
+    id: 11,
+    personalInfo: {
+      name: 'Дмитрий',
+      lastName: 'Лодырев',
+      phone: '79998887755',
+      city: 'Санкт-Петербург',
+      email: 'maxim@mail.ru',
+      languageLevel: 'Intermediate'
+    },
+    lessons: [{ date: new Date().toLocaleDateString(), teacher: 'Анна Сладких' }]
+  },
+  {
+    id: 12,
+    personalInfo: {
+      name: 'Алексей',
+      lastName: 'Прогульщиков',
+      phone: '79998887755',
+      city: 'Санкт-Петербург',
+      email: 'maxim@mail.ru',
+      languageLevel: 'Intermediate'
+    },
+    lessons: [{ date: new Date().toLocaleDateString(), teacher: 'Анна Сладких' }]
+  },
+  {
+    id: 13,
+    personalInfo: {
+      name: 'Максим',
+      lastName: 'Петров',
+      phone: '79998887755',
+      city: 'Санкт-Петербург',
+      email: 'maxim@mail.ru',
+      languageLevel: 'Intermediate',
+      comment: 'Лодырь!'
+    },
+    lessons: [{ date: new Date().toLocaleDateString(), teacher: 'Анна Сладких' }]
+  },
+  {
+    id: 14,
+    personalInfo: {
+      name: 'Иван',
+      lastName: 'Попов',
+      phone: '79998887755',
+      city: 'Санкт-Петербург',
+      email: 'maxim@mail.ru',
+      languageLevel: 'Intermediate'
+    },
+    lessons: [{ date: new Date().toLocaleDateString(), teacher: 'Анна Сладких' }]
+  },
+  {
+    id: 15,
+    personalInfo: {
+      name: 'Дмитрий',
+      lastName: 'Лодырев',
+      phone: '79998887755',
+      city: 'Санкт-Петербург',
+      email: 'maxim@mail.ru',
+      languageLevel: 'Intermediate'
+    },
+    lessons: [{ date: new Date().toLocaleDateString(), teacher: 'Анна Сладких' }]
+  },
+  {
+    id: 16,
+    personalInfo: {
+      name: 'Алексей',
+      lastName: 'Прогульщиков',
+      phone: '79998887755',
+      city: 'Санкт-Петербург',
+      email: 'maxim@mail.ru',
+      languageLevel: 'Intermediate'
+    },
+    lessons: [{ date: new Date().toLocaleDateString(), teacher: 'Анна Сладких' }]
   }
 ])
